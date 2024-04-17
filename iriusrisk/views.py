@@ -24,6 +24,6 @@ def summarize_text():
         summary_output = ''
         for sentence in summary:
             summary_output += str(sentence)
-        return summary_output
+        return {"summary": summary_output}
     except Exception as e:
         return str(e), status.HTTP_400_BAD_REQUEST
